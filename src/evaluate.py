@@ -8,7 +8,7 @@ df = pd.read_csv("data/sample.csv")
 X = df.drop("label", axis=1)
 y = df["label"]
 
-model = joblib.load("model.joblib")
+model = joblib.load("model.jobli")
 preds = model.predict(X)
 
 acc = accuracy_score(y, preds)
